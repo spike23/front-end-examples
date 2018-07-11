@@ -25,16 +25,20 @@
         <link rel="stylesheet" href="assets/css/animate.css">
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
         <link rel="stylesheet" href="assets/css/odometer-theme-default.css">
-        <script>
-        window.odometerOptions = {
-          selector: '.odometer',
-          format: '(,ddd)', // Change how digit groups are formatted, and how many digits are shown after the decimal point
-          duration: 13000, // Change how long the javascript expects the CSS animation to take
-          theme: 'default'
+     
+<script>
+  $(window).load(function () {
+      $(".load-container").delay(100).fadeOut(250);
+  });
+</script>
+       <script>
+        window.onresize = function() {
+            document.getElementById("size").innerHTML = window.innerWidth;
         };
         </script>
     </head>
     <body class="">
+
       <!-- Pushy Menu -->
       <nav class="pushy pushy-left">
         <ul class="list-unstyled">
@@ -50,7 +54,8 @@
       <!-- Site Overlay -->
       <div class="site-overlay"></div>
 
-        <header id="home">
+        <header id="home" class="parallax">
+          <div class="shadow">
             <div class="container-fluid">
                 <!-- change the image in style.css to the class header .container-fluid [approximately row 50] -->
                 <div class="container">
@@ -65,12 +70,13 @@
                         </div>
                     </div>
                     <div class="jumbotron">
-                        <h1><small>Legends of</small></br>
+                        <h1><small>Legends of</small><br>
 						<strong>Hard`n`Heavy</strong></h1>
                         <p>This is the simple site about the most popular and my favourites hard`n`heavy bands.</p>
                     </div>
                 </div>
             </div>
+        </div>
         </header>
         <section id="feat">
             <div class="container">
@@ -192,6 +198,7 @@
         <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
         <script src="http://masonry.desandro.com/masonry.pkgd.js"></script>
         <script src="assets/js/masonry.js"></script>
+        <script src="assets/js/parallax.min.js"></script>
         <script src="assets/js/pushy.min.js"></script>
         <script src="assets/js/jquery.magnific-popup.min.js"></script>
         <script src="assets/js/wow.min.js"></script>

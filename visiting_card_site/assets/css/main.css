@@ -210,7 +210,7 @@ input, select, textarea {
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #348cb2 url("images/bg.jpg") bottom left;
+		background: #d5c8a9 url("images/bg.png") bottom left;
 		background-repeat: repeat-x;
 		background-size: overlay;
 		height: 100%;
@@ -358,6 +358,10 @@ input, select, textarea {
 		text-align: center;
 		top: 0;
 		width: 100%;
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
+		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
 	}
 
 		#main:before {
@@ -536,7 +540,10 @@ input, select, textarea {
 		top: -1em;
 		vertical-align: middle;
 		width: 90%;
+
 	}
+
+
 
 		#header h1 {
 			font-size: 4.35em;
@@ -711,39 +718,18 @@ input, select, textarea {
 		width: 100%;
 	}
 
-	#footer .skype {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
+ #footer .wrapper {
+ 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
 		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
-		bottom: 0;
-		cursor: default;
-		height: 6em;
-		left: 0;
-		line-height: 8em;
-		position: absolute;
-		text-align: left;
-		padding-left: 27em;
-		opacity: 0.7;
-		width: 100%;
-	}
-		#footer .mail {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
-		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
-		bottom: 0;
-		cursor: default;
-		height: 6em;
-		left: 0;
-		line-height: 8em;
-		position: absolute;
-		text-align: right;
-		padding-right: 27em;
 		opacity: 0.5;
-		width: 100%;
-	}
+ }  
+#footer .ft {
+	display: inline-block;
+	width: 33%;
 
+}
 /* Wide */
 
 	@media screen and (max-width: 1680px) {
@@ -1002,10 +988,11 @@ input, select, textarea {
 
 		#header p {
 			font-size: 1em;
+			margin: 0;
 		}
 
 		#header nav {
-			font-size: 1em;
+			font-size: 0.6em;
 		}
 
 			#header nav a:hover {
@@ -1092,8 +1079,17 @@ input, select, textarea {
 			width: 1237.5px;
 		}
 
+		#footer .ft {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: 25px;
+}
+#footer {
+	height: 10em;
+}
 	/* Header */
 
 		#header nav {
 			padding: 0 1em;
-		} }
+		} }}

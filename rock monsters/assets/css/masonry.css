@@ -27,6 +27,14 @@ http://codepen.io/jdlaplan/pen/Aowpj
   .masonry .item img {
     width: 100%;
   }
+  header {
+    height: 550px;
+    background-size: auto;
+  }
+
+  .jumbotron h1{
+    font-size: 34px;
+  }
 }
 @media only screen and (max-width: xxspx) {
   .masonry {
@@ -63,6 +71,14 @@ http://codepen.io/jdlaplan/pen/Aowpj
   .masonry .item img {
     width: 100%;
   }
+  header {
+    height: 550px;
+    background-size: auto;
+  }
+
+  .jumbotron h1{
+    font-size: 34px;
+  }
 }
 @media (min-width: 768px) {
   .masonry {
@@ -81,6 +97,7 @@ http://codepen.io/jdlaplan/pen/Aowpj
   .masonry .item img {
     width: 100%;
   }
+
 }
 @media (min-width: 992px) {
   .masonry {

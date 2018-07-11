@@ -36,6 +36,8 @@ audio:not([controls]) {
 template {
   display: none;
 }
+
+
 a {
   background: transparent;
 }
