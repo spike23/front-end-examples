@@ -48,21 +48,18 @@ span.x4:before, i.x4:before
 \*------------------------------------*/
 
 header .container-fluid
-{
-    
-    height: auto;
+{   position: relative;
+    background: url('http://www.aria.ru/var/files/b/586cb0a6ddba38.47317474') no-repeat center top fixed;
+    height: 100%;
+    background-size: cover;
     padding-top: 36px;
     overflow: hidden;
 }
 
 header {
-    position: relative;
-    height: 600px;
+    
+    height: 690px;
     width: 100%;
-    background-image: url('http://www.aria.ru/var/files/b/586cb0a6ddba38.47317474');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center center;
     overflow: hidden;
 }
 
